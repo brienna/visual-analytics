@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> /* set the CSS */
+
+body { font: 12px Arial;
+width: 800px;}
+
+.domain { 
+    stroke: black;
+    stroke-width: 1;
+    fill: none;
+}
+
+.d3circle {
+  fill: black;
+}
+
+.d3circle:hover {
+  fill: red ;
+}
+
+
+div.tooltip {   
+    position: absolute;         
+    text-align: center;         
+    width: 100px;                                       
+    padding: 2px;               
+    font: 12px sans-serif;      
+    background: lightgray; 
+    border: 0px;        
+    border-radius: 8px;         
+    pointer-events: none;           
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+</style>
+<body>
+<h1>Runkeeper data from 2014 - 2018, Brienna Herold</h1>
+<!-- load the d3.js library -->    
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+<!-- load d3js visualization -->
+<h2>d3.js v3 — Distances run</h2>
+<script type='text/javascript' src="js/vis_d3js.js"></script>
+<!-- load google geochart --> 
+<script type='text/javascript' src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type='text/javascript' src="js/jquery.csv.min.js"></script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+<h2>google geochart — Locations run, scaled by distances</h2>
+<script type='text/javascript' src="js/vis_google_geochart.js"></script>
+<div id="chart_div" style="width: 900px; height: 500px;"></div>
+<!-- load google bubble chart -->
+<h2>google bubble chart — Comparison of distances, average pace, calories burned, and elevation climb</h2>
+<script type='text/javascript' src="js/vis_google_bubblechart.js"></script>
+<div id="series_chart_div" style="width: 900px; height: 500px;"></div>
+
+</body>
